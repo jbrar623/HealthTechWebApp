@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GuardDog Safety Dashboard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme">Menu</h1>
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="#" class="w3-bar-item w3-button">Historic Data</a>
+  <a href="#" class="w3-bar-item w3-button">About GuardDog</a>
+  <a href="#" class="w3-bar-item w3-button">Contact Us</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+  <div class="w3-center">
+  <h1 class="w3-xxxlarge w3-animate-bottom">GuardDog Dashboard 
+    <!-- <img src="IMAGES/GuardDogLogo.jpg" alt="GuardDog Logo" height="100rem" width="100rem">  -->
+  </h1>
+  
+    <div class="w3-padding-32">
+        <header class="w3-container w3-theme-l1"> 
+      <span id="datetime"></span>
+
+      <script>
+        // create a function to update the date and time
+        function updateDateTime() {
+          // create a new `Date` object
+          const now = new Date();
+  
+          // get the current date and time as a string
+          const currentDateTime = now.toLocaleString();
+  
+          // update the `textContent` property of the `span` element with the `id` of `datetime`
+          document.querySelector('#datetime').textContent = currentDateTime;
+        }
+  
+        // call the `updateDateTime` function every second
+        setInterval(updateDateTime, 1000);
+      </script>
+
+    </div>
+  </div>
+</header>
+
+
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Temperature</h3><br>
+  <!-- <p>WHERE WE WILL INCLUDE THE SENSOR DATA</p> -->
+  <p id="temperature"> Loading...</p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Humidity</h3><br>
+  <!-- <p>WHERE WE WILL INCLUDE THE SENSOR DATA</p> -->
+  <p id="humidity"> Loading...</p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Carbon Dioxide (CO₂) </h3><br>
+  <!-- <p>WHERE WE WILL INCLUDE THE SENSOR DATA</p> -->
+  <p id="co2"> Loading...</p>
+  </div>
+</div>
+<script src="sensor.js"></script>
+
+</div>
+
+
+<hr>
+<div class="w3-center">
+  <h4>Navigation</h4>
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-theme">«</a>
+      <a href="#" class="w3-bar-item w3-button w3-theme w3-hover-theme">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-theme">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-theme">3</a>
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16">
+  <h4> @ Team Environmental (Creators of GuardDog) </h4>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+  <p>A project for the Mount Royal Unviersity Institue of Innovation and Entrepreneurship  <a href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/Business/Institutes/InstituteInnovationEntrepreneurship/HealthTech-Challenge.htm" class="w3-btn w3-theme-light" target="_blank"> Health Tech Challenge</a></p>
+</footer>
+
+<!-- Script for Sidebar -->
+<script>
+// Side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "100%";
+  x.style.fontSize = "40px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
