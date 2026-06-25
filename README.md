@@ -20,13 +20,13 @@ GuardDog is a project developed as part of the 2024 cohort of the HealthTech Cha
 
 ## Team
 
-| Name | GitHub | LinkedIn |
-|---|---|---|
-| Joban Brar | [jbrar623](https://github.com/jbrar623) | [joban](https://www.linkedin.com/in/joban-brar) |
-| Shweta Limbu | [oabue449](https://github.com/oabue449) | [shweta](https://www.linkedin.com/in/shweta-limbu/) |
-| Nate Ostojic | [GitHub](https://github.com) | [nate](https://www.linkedin.com/in/-fields/) |
-| Edward Montilla | [Edward-Montilla](https://github.com/Edward-Montilla) | [edward](https://www.linkedin.com/in/gabrieledwardmontilla/) |
-| Christopher Lassota | [Edward-Montilla](https://github.com/Edward-Montilla) | [chris](https://www.linkedin.com/in/christopherlassota/) |
+| Name | LinkedIn |
+|---|---|
+| Joban Brar | [joban](https://www.linkedin.com/in/joban-brar) |
+| Shweta Limbu | [shweta](https://www.linkedin.com/in/shweta-limbu/) |
+| Nate Ostojic | [nate](https://www.linkedin.com/in/-fields/) |
+| Edward Montilla | [edward](https://www.linkedin.com/in/gabrieledwardmontilla/) |
+| Christopher Lassota | [chris](https://www.linkedin.com/in/christopherlassota/) |
 
 ## Components, Tools & Technologies
 
